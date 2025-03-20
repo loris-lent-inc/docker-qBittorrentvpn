@@ -2,13 +2,13 @@
 #
 # Version 1.8
 
-FROM ubuntu:20.04
-MAINTAINER MarkusMcNugen
+FROM ubuntu:24.04
+#MAINTAINER MarkusMcNugen
 
 VOLUME /downloads
 VOLUME /config
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN usermod -u 99 nobody
 
